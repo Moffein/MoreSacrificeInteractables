@@ -23,10 +23,10 @@ namespace MoreSacrificeInteractables
         public void Awake()
         {
             allowEquipBarrel = Config.Bind("Equipment", "Equipment Barrel", true, "Allow this interactable to spawn when Sacrifice is enabled.").Value;
-            equipBarrelWeight = Config.Bind("Equipment", "Equipment Barrel Weight", 0.25f, "Affects how often this interactable will spawn when Sacrifice is enabled.").Value;
+            equipBarrelWeight = Config.Bind("Equipment", "Equipment Barrel Weight", 0.2f, "Affects how often this interactable will spawn when Sacrifice is enabled.").Value;
 
             allowEquipShop = Config.Bind("Equipment", "Equipment Multishop", true, "Allow this interactable to spawn when Sacrifice is enabled.").Value;
-            equipShopWeight = Config.Bind("Equipment", "Equipment Multishop Weight", 0.25f, "Affects how often this interactable will spawn when Sacrifice is enabled.").Value;
+            equipShopWeight = Config.Bind("Equipment", "Equipment Multishop Weight", 0.2f, "Affects how often this interactable will spawn when Sacrifice is enabled.").Value;
 
             allowLunarPod = Config.Bind("Lunar", "Lunar Pod", true, "Allow this interactable to spawn when Sacrifice is enabled.").Value;
             lunarPodWeight = Config.Bind("Lunar", "Lunar Pod Weight", 0.5f, "Affects how often this interactable will spawn when Sacrifice is enabled.").Value;
