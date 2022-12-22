@@ -4,6 +4,14 @@ using System;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
+namespace R2API.Utils
+{
+    [AttributeUsage(AttributeTargets.Assembly)]
+    public class ManualNetworkRegistrationAttribute : Attribute
+    {
+    }
+}
+
 namespace MoreSacrificeInteractables
 {
     [BepInPlugin("com.Moffein.MoreSacrificeInteractables", "MoreSacrificeInteractables", "1.0.0")]
