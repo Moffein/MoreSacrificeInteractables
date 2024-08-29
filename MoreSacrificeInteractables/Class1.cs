@@ -14,8 +14,8 @@ namespace R2API.Utils
 
 namespace MoreSacrificeInteractables
 {
-    [BepInPlugin("com.Moffein.MoreSacrificeInteractables", "MoreSacrificeInteractables", "1.0.1")]
-    public class PrintToInventory : BaseUnityPlugin
+    [BepInPlugin("com.Moffein.MoreSacrificeInteractables", "MoreSacrificeInteractables", "1.0.2")]
+    public class MoreSacrificeInteractablesPlugin : BaseUnityPlugin
     {
         public static bool allowEquipBarrel, allowEquipShop, allowLunarPod, allowVoidCradle, allowVoidTriple;
         public static float equipBarrelWeight, equipShopWeight, lunarPodWeight, voidCradleWeight, voidTripleWeight;
@@ -49,7 +49,6 @@ namespace MoreSacrificeInteractables
             InteractableSpawnCard isc = Addressables.LoadAssetAsync<InteractableSpawnCard>(addressablePath).WaitForCompletion();
             if (isc)
             {
-                //Debug.Log(addressablePath + " - " + isc.weightScalarWhenSacrificeArtifactEnabled + "\n");
 
                 if (isc.weightScalarWhenSacrificeArtifactEnabled == 0f)
                 {
